@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faculty Invitation 2025</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff5f5;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #b71c1c, #d32f2f);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-family: Georgia, serif;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #ffeb3b;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .details {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .details div {
+      margin: 1rem;
+    }
+    .details span {
+      display: block;
+      font-size: 2rem;
+      color: #b71c1c;
+    }
+    .button-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #d32f2f;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .button-link:hover {
+      background-color: #b71c1c;
+    }
+    input[type="text"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 250px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #b71c1c;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+    footer p {
+      animation: fadeIn 3s infinite alternate;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0.6; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Faculty Invitation 2025</h1>
+    <p>“A Warm Welcome Awaits You”</p>
+  </header>
+
+  <!-- Event Details -->
+  <section class="section">
+    <h2>Event Details</h2>
+    <div class="details">
+      <div>
+        <span>📅</span>
+        <p><b>Date:</b> 19th September 2025</p>
+      </div>
+      <div>
+        <span>⏰</span>
+        <p><b>Time:</b> 10:00 AM</p>
+      </div>
+      <div>
+        <span>📍</span>
+        <p><b>Venue:</b> Seminar Hall</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unique Code Entry Section -->
+  <section class="section" id="code-entry-section">
+    <h2>Enter Your Unique Code</h2>
+    <form id="codeForm" style="text-align: center;">
+      <input type="text" id="userCode" placeholder="Enter your unique code" required>
+      <br><br>
+      <button type="submit" class="button-link">🔓 Reveal My Invitation</button>
+    </form>
+  </section>
+
+  <!-- Revealed Image Section -->
+  <section class="section" id="reveal-section" style="display:none; text-align:center;">
+    <h2>Your Personalized Invitation</h2>
+    <img id="invitationImage" src="" alt="Your Invitation" style="max-width: 100%; height: auto; margin-bottom: 1rem;">
+    <!-- Invitation View Button -->
+    <br>
+    <a id="invitationLink" class="button-link" href="#" target="_blank">📜 View Invitation</a>
+  </section>
+
+  <!-- Organizer Details -->
+  <section class="section">
+    <h2>Organizers</h2>
+    <p><b>Department of XYZ</b></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Thank you for being a part of our journey 🌸</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const codeMap = {
+      'PUSHPA': {
+        image: 'library.png',
+        link: 'invitation.html'
+      },
+      'MADHURI': {
+        image: 'madhuri.png',
+        link: 'invitation.html'
+      },
+      'MARY': {
+        image: 'madhuri.png',
+        link: 'invitation.html'
+      },
+      'NAGESH': {
+        image: 'nagesh.png',
+        link: 'invitation.html'
+      },
+      'NARAYAN': {
+        image: 'narayan.png',
+        link: 'invitation.html'
+      },
+      'RAMESH': {
+        image: 'ramesh.png',
+        link: 'invitation.html'
+      },
+      'SAI': {
+        image: 'sai.png',
+        link: 'invitation.html'
+      },
+      'SUBRAMANYAM': {
+        image: 'subramanyam.png',
+        link: 'invitation.html'
+      },
+      'SUREKHA': {
+        image: 'surekha',
+        link: 'invitation.html'
+      },
+      'SWETHA': {
+        image: 'swetha.jpg',
+        link: 'invitation.html'
+      },
+      'ZAMEER': {
+        image: 'zameer.png',
+        link: 'invitation.html'
+      },
+    'GOVIND': {
+    image: 'gov.jpg',
+    link: 'invitation.html'
+  },
+  'APARNA': {
+    image: 'aparna.jpg',
+    link: 'invitation.html'
+  },
+  'KUMARI': {
+    image: 'kumari.jpg',
+    link: 'invitation.html'
+  },
+  'LAKSHMI': {
+    image: 'lakshmi.jpg',
+    link: 'invitation.html'
+  },
+  'MAHESH': {
+    image: 'mahesh.jpg',
+    link: 'invitation.html'
+  },
+  'SRIDEVI': {
+    image: 'sridevi.jpg',
+    link: 'invitation.html'
+  },
+  'SRIRAM': {
+    image: 'sriram.jpg',
+    link: 'invitation.html'
+  },
+  'SWATHI': {
+    image: 'swathi.png',
+    link: 'invitation.html'
+  },
+
+  'SATTIBABU': {
+    image: 'sattibabu.png',
+    link: 'invitation.html'
+  }
+};
+
+    document.getElementById('codeForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const enteredCode = document.getElementById('userCode').value.trim().toUpperCase();
+      const data = codeMap[enteredCode];
+
+      if (data) {
+        document.getElementById('code-entry-section').style.display = 'none';
+        document.getElementById('invitationImage').src = data.image;
+        document.getElementById('invitationLink').href = data.link;
+        document.getElementById('reveal-section').style.display = 'block';
+      } else {
+        alert('Invalid code. Please try again.');
+      }
+    });
+  </script>
+
+</body>
+</html>
